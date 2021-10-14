@@ -1,13 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- APlayer CSS -->
+    		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
 		<link rel="icon" type="image/x-icon" href="source/favicon.ico"/>
     <title>Restie | Get better soon</title>
@@ -64,7 +61,6 @@
     	}
 		
 
-		/*default is hide music player*/
 		#aplayer{
 			position: fixed;
 			bottom: -100%;
@@ -80,7 +76,6 @@
 		}
 
 		
-		/*MUSIC PLAYER CUSTOMIZING STYLE*/
 		span{
 			color: #000 !important;
 			font-size: 16px;
@@ -197,29 +192,23 @@
 
 	<div id="aplayer"></div>
 
-	<!-- Jquery Link -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<!-- Bootstrap Link -->
+
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<!-- APlayer Jquery link -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
 
 	<script>
 
 
-		// NOW I CLICK album-poster TO GET CURRENT SONG ID
 		$(".album-poster").on('click', function(e){
 			var dataSwitchId = $(this).attr('data-switch');
 			//console.log(dataSwitchId);
 
-			// and now i use aplayer switch function see
-			ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
+			ap.list.switch(dataSwitchId); 
 
-			// aplayer play function
-			// when i click any song to play
 			ap.play();
 
-			// click to slideUp player see
 			$("#aplayer").addClass('showPlayer');
 		});
 
@@ -234,10 +223,10 @@
 		        cover: 'https://i1.sndcdn.com/artworks-000464824788-pmzy58-t500x500.jpg'
 		    },
 			{
-		        name: 'Make You Mine',  // SONG NAME
-		        artist: 'Public', //ARTIST NAME
-		        url: 'source/public.mp3', // PATH NAME AND SONG URL
-		        cover: 'https://t2.genius.com/unsafe/618x0/https%3A%2F%2Fimages.genius.com%2F91e9c650b8730bfa1eb2cbb1545d0cac.640x640x1.jpg' // COVER IMAGE
+		        name: 'Make You Mine',
+		        artist: 'Public',
+		        url: 'source/public.mp3',
+		        cover: 'https://t2.genius.com/unsafe/618x0/https%3A%2F%2Fimages.genius.com%2F91e9c650b8730bfa1eb2cbb1545d0cac.640x640x1.jpg'
 		    },
 			{
 				name: 'Dynamite',
